@@ -5,7 +5,7 @@ const range = (init, end, condition = 1) => {
             Arr.push(i)
         }
     } else {
-        for (i = init; i >= end; i = i - condition) {
+        for (i = init; i >= end; i = i + condition) {
             Arr.push(i)
         }
     }
@@ -18,5 +18,5 @@ const sum = Arr => {
     return result
 }
 
-console.log(range(1,10,3))
-console.log(sum(range(15, 10)))
+console.log(range(10,1,-1))
+// console.log(sum(range(15, 10)))
